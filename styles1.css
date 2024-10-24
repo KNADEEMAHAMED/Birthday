@@ -1,0 +1,46 @@
+body {
+    background-color: pink; /* Change to your desired background color */
+}
+
+.balloon-animation {
+    width: 50px;
+    height: 100px;
+    background-image: url("C:\Users\Nadeem\OneDrive\Desktop\Ballons.jpeg"
+"C:\Users\Nadeem\OneDrive\Desktop\index.html"); /* Replace 'balloon.png' with the actual image of a balloon */
+    position: absolute;
+    animation: float 5s linear infinite alternate;
+    top: 100%;
+    left: calc(50% - 25px);
+    z-index: 1;
+}
+
+.heart-animation {
+    width: 50px;
+    height: 50px;
+    background-image: url("C:\Users\Nadeem\OneDrive\Desktop\heart2.jpeg"); /* Replace 'heart.png' with the actual image of a heart */
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 25px);
+    animation: heartbeat 1s ease-in-out infinite alternate;
+    z-index: 1;
+}
+
+@keyframes float {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-50px); }
+}
+
+@keyframes heartbeat {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.3); }
+    100% { transform: scale(1); }
+}
+
+.hidden {
+    display: none;
+}
+
+#virtual-cake {
+    text-align: center;
+    margin-top: 20px;
+}
